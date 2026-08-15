@@ -1,0 +1,21 @@
+# dependencies and build output
+/node_modules
+/.next
+/out
+
+# local deployment and QA state
+/.vercel
+/tmp
+
+# environment files
+.env*
+!.env.example
+
+# generated intermediates (optimized WebP assets are committed)
+/public/images/haniyeh/hero-desktop.png
+/public/images/haniyeh/hero-mobile.png
+
+# local tooling
+*.log
+.DS_Store
+Thumbs.db
