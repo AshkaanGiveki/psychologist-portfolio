@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { profile } from "@/content/profile";
 import { dirFor, isLocale, locales, type Locale } from "@/lib/i18n";
-import { siteUrl } from "@/lib/seo";
+import { seoKeywords, siteUrl } from "@/lib/seo";
 import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/500.css";
 import "@fontsource/cormorant-garamond/600.css";
@@ -27,15 +27,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const title = profile.seo.title[locale];
   const description = profile.seo.description[locale];
   const canonical = `${siteUrl}/${locale}`;
-  const keywords = locale === "fa"
-    ? ["علوم اعصاب شناختی", "پژوهشگر علوم اعصاب شناختی", "متخصص بازتوانی شناختی", "ارزیابی شناختی", "نقشه مغزی", "QEEG", "EEG", "ERP", "نورومدولیشن", "تهران"]
-    : ["cognitive neuroscientist", "cognitive rehabilitation specialist", "cognitive assessment", "QEEG brain mapping", "EEG", "ERP", "neuromodulation", "Tehran"];
+  const keywords = seoKeywords[locale];
 
   return {
     metadataBase: new URL(siteUrl),
+    applicationName: "Haniyeh Ahmadi",
     title,
     description,
-    keywords,
+    keywords: [...keywords],
+    authors: [{ name: "Haniyeh Ahmadi", url: `${siteUrl}/${locale}` }],
+    creator: "Haniyeh Ahmadi",
+    publisher: "Haniyeh Ahmadi",
+    category: locale === "fa" ? "علوم اعصاب شناختی و روانشناسی" : "Cognitive neuroscience and psychology",
+    classification: "Professional portfolio and research profile",
     icons: { icon: "/images/haniyeh/Logo.ico" },
     alternates: {
       canonical,
@@ -44,6 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       type: "profile",
       url: canonical,
+      siteName: "Haniyeh Ahmadi",
       title,
       description,
       locale: locale === "fa" ? "fa_IR" : "en_US",
@@ -51,7 +56,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: profile.identity.name[locale] }],
     },
     twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image"] },
-    robots: { index: true, follow: true },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+    },
   };
 }
 

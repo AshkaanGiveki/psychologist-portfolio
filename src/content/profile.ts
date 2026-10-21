@@ -13,7 +13,7 @@ export const profile = {
     location: l("Tehran, Iran", "تهران، ایران"),
   },
   hero: {
-    eyebrow: l("Cognitive neuroscience, assessment & rehabilitation", "علوم اعصاب شناختی، ارزیابی و بازتوانی"),
+    eyebrow: l("Haniyeh Ahmadi · Cognitive neuroscience, psychology & rehabilitation", "هانیه احمدی · علوم اعصاب شناختی، روانشناسی و بازتوانی"),
     lead: l("From brain\ninsights", "از شناخت مغز"),
     stroke: l("to better\nlives.", "تا زندگی بهتر"),
     body: l(
@@ -162,8 +162,8 @@ export const profile = {
   seo: {
     title: l("Haniyeh Ahmadi | Cognitive Neuroscientist & Cognitive Rehabilitation Specialist", "هانیه احمدی | پژوهشگر علوم اعصاب شناختی و متخصص بازتوانی شناختی"),
     description: l(
-      "Official portfolio of Haniyeh Ahmadi, a cognitive neuroscientist and cognitive rehabilitation specialist in Tehran working across EEG/ERP, QEEG brain mapping, cognitive assessment, psychometrics, neuromodulation and evidence-informed rehabilitation.",
-      "وب‌سایت رسمی هانیه احمدی، پژوهشگر علوم اعصاب شناختی و متخصص بازتوانی شناختی در تهران؛ فعال در حوزه‌های نقشه مغزی و QEEG، EEG/ERP، ارزیابی شناختی و روان‌سنجی، نورومدولیشن و بازتوانی مبتنی بر شواهد.",
+      "Official website of Haniyeh Ahmadi, psychologist and cognitive neuroscientist in Tehran. Explore her work in brain mapping, QEEG, EEG/ERP, cognitive assessment, psychometrics, neuromodulation and cognitive rehabilitation.",
+      "وب‌سایت رسمی هانیه احمدی، روانشناس و پژوهشگر علوم اعصاب شناختی در تهران. آشنایی با فعالیت‌های او در زمینه نقشه‌برداری مغز، QEEG، EEG/ERP، ارزیابی شناختی، روان‌سنجی، نورومدولیشن و بازتوانی شناختی.",
     ),
   },
 } as const;
