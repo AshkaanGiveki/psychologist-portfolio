@@ -54,7 +54,7 @@ export const profile = {
     {
       date: l("2022–Present", "۱۴۰۱–اکنون"),
       degree: l("Ph.D. Cognitive Science", "دکترای علوم شناختی"),
-      place: l("University of Tehran", "دانشگاه تهران"),
+      place: l("Institute for Cognitive Science Studies (ICSS)", "پژوهشکده علوم شناختی (ICSS)"),
       detail: l(
         "Doctoral studies in cognitive science, with a focus on cognitive assessment, brain mapping and rehabilitation.",
         "تحصیل در مقطع دکترا در رشته علوم شناختی با تمرکز بر ارزیابی شناختی، نقشه‌برداری مغز و بازتوانی.",
