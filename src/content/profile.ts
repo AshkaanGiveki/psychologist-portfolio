@@ -7,18 +7,18 @@ export const profile = {
     name: l("Haniyeh Ahmadi", "هانیه احمدی"),
     shortName: "HA",
     role: l(
-      "Cognitive rehabilitation specialist & clinical neuroscience researcher",
-      "متخصص بازتوانی شناختی و پژوهشگر علوم اعصاب بالینی",
+      "Cognitive neuroscientist, cognitive rehabilitation specialist & clinical neuroscience researcher",
+      "پژوهشگر علوم اعصاب شناختی و متخصص بازتوانی شناختی",
     ),
     location: l("Tehran, Iran", "تهران، ایران"),
   },
   hero: {
-    eyebrow: l("Cognitive science & rehabilitation", "علوم شناختی و بازتوانی"),
+    eyebrow: l("Cognitive neuroscience, assessment & rehabilitation", "علوم اعصاب شناختی، ارزیابی و بازتوانی"),
     lead: l("From brain\ninsights", "از شناخت مغز"),
     stroke: l("to better\nlives.", "تا زندگی بهتر"),
     body: l(
-      "I connect clinical assessment, brain mapping and evidence-informed rehabilitation to support cognitive function across neurological and mental-health settings.",
-      "میان ارزیابی بالینی، نقشه‌برداری مغز و بازتوانی مبتنی بر شواهد پیوند می‌سازم تا عملکرد شناختی در موقعیت‌های عصب‌شناختی و سلامت روان بهتر شود.",
+      "I am a cognitive neuroscientist and cognitive rehabilitation specialist connecting clinical assessment, brain mapping, EEG/ERP and evidence-informed rehabilitation across neurological and mental-health settings in Tehran.",
+      "من پژوهشگر علوم اعصاب شناختی و متخصص بازتوانی شناختی هستم و ارزیابی بالینی، نقشه‌برداری مغز، EEG/ERP و بازتوانی مبتنی بر شواهد را در حوزه سلامت مغز و روان در تهران به هم پیوند می‌دهم.",
     ),
     primaryCta: l("Explore my work", "مرور فعالیت‌ها"),
     secondaryCta: l("Download CV", "دریافت رزومه"),
@@ -38,8 +38,8 @@ export const profile = {
       "از مشاهده‌ی دقیق تا مراقبتی معنادار",
     ),
     body: l(
-      "I am a cognitive rehabilitation specialist with a background in clinical psychology and cognitive science. My work spans EEG and ERP recording and interpretation, psychometric assessment, neuromodulation, and the design of cognitive rehabilitation protocols. I am especially interested in how rigorous assessment can lead to more thoughtful, human-centered intervention.",
-      "مسیر حرفه‌ای من از روان‌شناسی بالینی آغاز شد و در علوم شناختی و بازتوانی شناختی ادامه پیدا کرد. امروز در مرز ارزیابی روان‌سنجی، ثبت و تفسیر EEG و ERP، تحریک غیرتهاجمی مغز و طراحی پروتکل‌های بازتوانی کار می‌کنم؛ با این باور که مداخله‌ی خوب، از سنجش دقیق و فهم انسانی آغاز می‌شود.",
+      "I am a cognitive neuroscientist and cognitive rehabilitation specialist with a background in clinical psychology and cognitive science. My work spans EEG and ERP recording and interpretation, QEEG-informed brain mapping, psychometric and cognitive assessment, neuromodulation, and the design of individualized cognitive rehabilitation protocols.",
+      "مسیر حرفه‌ای من از روان‌شناسی بالینی آغاز شد و در علوم اعصاب شناختی و بازتوانی شناختی ادامه پیدا کرد. امروز در زمینه ثبت و تفسیر EEG و ERP، نقشه مغزی مبتنی بر QEEG، ارزیابی شناختی و روان‌سنجی، نورومدولیشن و طراحی پروتکل‌های فردمحور بازتوانی شناختی فعالیت می‌کنم.",
     ),
     principles: [
       l("Evidence-informed practice", "کار مبتنی بر شواهد"),
@@ -51,6 +51,15 @@ export const profile = {
     videoUnavailable: l("Introduction video coming soon", "ویدئوی معرفی به‌زودی"),
   },
   education: [
+    {
+      date: l("2022–Present", "۱۴۰۱–اکنون"),
+      degree: l("Ph.D. Cognitive Science", "دکترای علوم شناختی"),
+      place: l("University of Tehran", "دانشگاه تهران"),
+      detail: l(
+        "Doctoral studies in cognitive science, with a focus on cognitive assessment, brain mapping and rehabilitation.",
+        "تحصیل در مقطع دکترا در رشته علوم شناختی با تمرکز بر ارزیابی شناختی، نقشه‌برداری مغز و بازتوانی.",
+      ),
+    },
     {
       date: l("2019–2022", "۱۳۹۸–۱۴۰۱"),
       degree: l("M.Sc. Cognitive Science — Cognitive Rehabilitation", "کارشناسی ارشد علوم شناختی — بازتوانی شناختی"),
@@ -91,7 +100,7 @@ export const profile = {
     },
     {
       date: l("Feb 2022 — Present", "بهمن ۱۴۰۰ — اکنون"),
-      role: l("Manager, Assessment & Rehabilitation", "مدیر واحد ارزیابی و بازتوانی"),
+      role: l("Head of Brain Mapping, Diagnosis & Assessment", "مدیر بخش نقشه مغزی، تشخیص و ارزیابی"),
       place: l("Atieh Clinical Neuroscience Center", "مرکز علوم اعصاب بالینی آتیه"),
       detail: l(
         "Developing and applying rTMS, tDCS and cognitive-training protocols informed by QEEG and psychometric assessment.",
@@ -151,10 +160,10 @@ export const profile = {
     { label: "LinkedIn", href: "https://www.linkedin.com/in/haniyeh-ahmadi-segazi" },
   ],
   seo: {
-    title: l("Haniyeh Ahmadi | Cognitive Rehabilitation & Clinical Neuroscience", "هانیه احمدی | بازتوانی شناختی و علوم اعصاب بالینی"),
+    title: l("Haniyeh Ahmadi | Cognitive Neuroscientist & Cognitive Rehabilitation Specialist", "هانیه احمدی | پژوهشگر علوم اعصاب شناختی و متخصص بازتوانی شناختی"),
     description: l(
-      "Portfolio of Haniyeh Ahmadi, a cognitive rehabilitation specialist and clinical neuroscience researcher working across EEG/ERP, neuromodulation and cognitive assessment.",
-      "وب‌سایت حرفه‌ای هانیه احمدی، متخصص بازتوانی شناختی و پژوهشگر علوم اعصاب بالینی در حوزه‌های EEG/ERP، تحریک مغزی و ارزیابی شناختی.",
+      "Official portfolio of Haniyeh Ahmadi, a cognitive neuroscientist and cognitive rehabilitation specialist in Tehran working across EEG/ERP, QEEG brain mapping, cognitive assessment, psychometrics, neuromodulation and evidence-informed rehabilitation.",
+      "وب‌سایت رسمی هانیه احمدی، پژوهشگر علوم اعصاب شناختی و متخصص بازتوانی شناختی در تهران؛ فعال در حوزه‌های نقشه مغزی و QEEG، EEG/ERP، ارزیابی شناختی و روان‌سنجی، نورومدولیشن و بازتوانی مبتنی بر شواهد.",
     ),
   },
 } as const;

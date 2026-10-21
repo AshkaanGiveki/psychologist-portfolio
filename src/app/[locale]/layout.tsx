@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { profile } from "@/content/profile";
 import { dirFor, isLocale, locales, type Locale } from "@/lib/i18n";
@@ -18,6 +18,8 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+export const viewport: Viewport = { themeColor: "#f6f1e8" };
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: value } = await params;
   if (!isLocale(value)) return {};
@@ -25,11 +27,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const title = profile.seo.title[locale];
   const description = profile.seo.description[locale];
   const canonical = `${siteUrl}/${locale}`;
+  const keywords = locale === "fa"
+    ? ["علوم اعصاب شناختی", "پژوهشگر علوم اعصاب شناختی", "متخصص بازتوانی شناختی", "ارزیابی شناختی", "نقشه مغزی", "QEEG", "EEG", "ERP", "نورومدولیشن", "تهران"]
+    : ["cognitive neuroscientist", "cognitive rehabilitation specialist", "cognitive assessment", "QEEG brain mapping", "EEG", "ERP", "neuromodulation", "Tehran"];
 
   return {
     metadataBase: new URL(siteUrl),
     title,
     description,
+    keywords,
     alternates: {
       canonical,
       languages: { en: `${siteUrl}/en`, fa: `${siteUrl}/fa`, "x-default": `${siteUrl}/en` },
