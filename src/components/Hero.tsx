@@ -61,7 +61,7 @@ export default function Hero({ locale }: { locale: Locale }) {
             <a className="button button-dark" href="#work">{h.primaryCta[locale]}<Arrow size={17} /></a>
             <a className="text-button" href="/cv/haniyeh-ahmadi-cv.pdf" download><ArrowDown size={18} />{h.secondaryCta[locale]}</a>
           </div>
-          <div className="hero-credential"><span className="mini-portrait"><Image src="/images/haniyeh/source.jpg" alt="" fill sizes="48px" /></span><span>{locale === "fa" ? "دکترای علوم شناختی · روان‌شناسی بالینی · دانشگاه تهران" : "Ph.D. Cognitive Science · Clinical psychology · University of Tehran"}</span></div>
+          <div className="hero-credential"><span className="mini-portrait"><Image src="/images/haniyeh/source.jpg" alt="" fill sizes="48px" /></span><span>{locale === "fa" ? "دکترای علوم شناختی · پژوهشکده علوم شناختی (ICSS)" : "Ph.D. Cognitive Science · Institute for Cognitive Science Studies (ICSS)"}</span></div>
         </div>
         <div className="hero-visual">
           <div className="sage-plane" />

@@ -81,12 +81,12 @@ export const profile = {
   ],
   experience: [
     {
-      date: l("Apr 2024 — Present", "فروردین ۱۴۰۳ — اکنون"),
-      role: l("Research Assistant", "دستیار پژوهشی"),
-      place: l("Institute for Research in Fundamental Sciences (IPM)", "پژوهشگاه دانش‌های بنیادی (IPM)"),
+      date: l("Feb 2022 — Present", "بهمن ۱۴۰۰ — اکنون"),
+      role: l("Head of Brain Mapping, Diagnosis & Assessment", "مدیر بخش نقشه مغزی، تشخیص و ارزیابی"),
+      place: l("Atieh Clinical Neuroscience Center", "مرکز علوم اعصاب بالینی آتیه"),
       detail: l(
-        "Researching 40 Hz tACS protocols using anterior-posterior and bihemispheric prefrontal montages in healthy older adults.",
-        "همکاری در پژوهش پروتکل ۴۰ هرتز tACS با مونتاژهای پیشانی پس‌سری و پیش‌پیشانی دو‌نیم‌کره‌ای در سالمندان سالم.",
+        "Developing and applying rTMS, tDCS and cognitive-training protocols informed by QEEG and psychometric assessment.",
+        "طراحی و اجرای پروتکل‌های rTMS، tDCS و تمرین شناختی با تکیه بر QEEG و ارزیابی‌های روان‌سنجی.",
       ),
     },
     {
@@ -99,12 +99,12 @@ export const profile = {
       ),
     },
     {
-      date: l("Feb 2022 — Present", "بهمن ۱۴۰۰ — اکنون"),
-      role: l("Head of Brain Mapping, Diagnosis & Assessment", "مدیر بخش نقشه مغزی، تشخیص و ارزیابی"),
-      place: l("Atieh Clinical Neuroscience Center", "مرکز علوم اعصاب بالینی آتیه"),
+      date: l("Apr 2024 — Mar 2025", "فروردین ۱۴۰۳ — اسفند ۱۴۰۳"),
+      role: l("Research Assistant", "دستیار پژوهشی"),
+      place: l("Institute for Research in Fundamental Sciences (IPM)", "پژوهشگاه دانش‌های بنیادی (IPM)"),
       detail: l(
-        "Developing and applying rTMS, tDCS and cognitive-training protocols informed by QEEG and psychometric assessment.",
-        "طراحی و اجرای پروتکل‌های rTMS، tDCS و تمرین شناختی با تکیه بر QEEG و ارزیابی‌های روان‌سنجی.",
+        "Researching 40 Hz tACS protocols using anterior-posterior and bihemispheric prefrontal montages in healthy older adults.",
+        "همکاری در پژوهش پروتکل ۴۰ هرتز tACS با مونتاژهای پیشانی پس‌سری و پیش‌پیشانی دو‌نیم‌کره‌ای در سالمندان سالم.",
       ),
     },
     {
