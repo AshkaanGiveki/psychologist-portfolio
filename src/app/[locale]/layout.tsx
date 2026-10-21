@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title,
     description,
     keywords,
+    icons: { icon: "/images/haniyeh/Logo.ico" },
     alternates: {
       canonical,
       languages: { en: `${siteUrl}/en`, fa: `${siteUrl}/fa`, "x-default": `${siteUrl}/en` },

@@ -23,7 +23,10 @@ export default function Header({ locale }: { locale: Locale }) {
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
       <div className="header-inner">
-        <a href="#home" className="brand" aria-label="Haniyeh Ahmadi home"><span>H<small>A</small></span><b>{locale === "fa" ? "هانیه احمدی" : "Haniyeh Ahmadi"}</b></a>
+        <a href="#home" className="brand" aria-label="Haniyeh Ahmadi home">
+          <img src="/images/haniyeh/Logo.png" alt="" width={48} height={48} />
+          <b>{locale === "fa" ? "هانیه احمدی" : "Haniyeh Ahmadi"}</b>
+        </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {links[locale].map(([label, id], i) => <a key={id} className={i === 0 ? "active" : ""} href={`#${id}`}>{label}</a>)}
         </nav>
